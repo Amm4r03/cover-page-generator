@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
         iframeDoc.getElementById('submittedText').innerHTML = `Submitted in partial fulfillment of the requirement of ${courseName} Program at <br> Deptt. of ${departmentName}<br>Jamia Hamdard, New Delhi`;
     });
 
+
     document.getElementById('downloadBtn').addEventListener('click', function(e) {
         e.preventDefault();
         printIframeContent();
@@ -33,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function printIframeContent() {
     const iframe = document.getElementById('coverPreview');
-    const iframeWindow = iframe.contentWindow;
-    iframeWindow.focus();
-    iframeWindow.print();
+    iframe.contentWindow.focus();
+    iframe.contentWindow.print();
 }

@@ -1,0 +1,143 @@
+*::selection {
+    background-color: rgba(0, 100, 0, 0.3);
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif, Verdana;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+    border: 1px solid black;
+    min-width: 8.27in;
+    min-height: 11.69in;
+    max-width: 8.27in;
+    max-height: 11.69in;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    /* margin-top: 40px; */
+    margin: 0 auto;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+#left {
+    text-align: left;
+}
+
+#right {
+    text-align: right;
+}
+
+.footerText {
+    margin: 15px;
+    /* padding: 10px; */
+    width: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+}
+
+#subtitle {
+    margin-top: 60px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+#title {
+    font-size: 46px;
+    margin-bottom: -5px;
+}
+
+#courseSubCode {
+    font-weight: 600;
+    margin-bottom: 85px;
+}
+
+#submittedText {
+    margin-top: 30px;
+    font-weight: 500;
+    line-height: 1.8rem;
+    word-spacing: 5px;
+}
+
+hr {
+    width: 85%;
+    height: 1.5px;
+    background-color: black;
+}
+
+.footer {
+    bottom: 0;
+    margin-top: 135px;
+}
+
+#username {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: -5px;
+}
+
+#enrollment {
+    font-size: 12px;
+}
+
+#courseName {
+    font-size: 14px;
+    font-style: italic;
+}
+
+#rightFooterText {
+    font-size: 14px;
+}
+
+#teacherName {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .page {
+        position: relative;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    html, body {
+        height:100%; 
+        margin: 0 !important; 
+        padding: 0 !important;
+        overflow: hidden;
+      }
+}

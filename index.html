@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Page Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Cover Page Generator</h1>
+        <a class="github-button" href="https://github.com/Amm4r03/" data-color-scheme="no-preference: light; light: light; dark: light;" data-icon="octicon-star" data-size="large" aria-label="Star Amm4r03/aa on GitHub">star on github</a>
+    </header>
+    
+    <div class="container">
+        <form id="coverDetails">
+            <h4>Enter your details here &downarrow;</h4>
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="text" id="courseName" placeholder="Course Name">
+            <input type="text" id="enrollment" placeholder="Enrollment Number">
+            <input type="text" id="subjectCode" placeholder="subject code">
+            <input type="text" id="subtitle" placeholder="subtitle">
+            <input type="text" id="title" placeholder="title">
+            <input type="text" id="departmentName" placeholder="Department name" title="eg : Computer Science and Engineering">
+            <input type="text" id="teacherName" placeholder="Teacher's name with honorific" title="eg : Mr. Firstname Lastname">
+            <br>
+            <button onclick="printIframeContent()" id="downloadBtn">Print Cover Page</button>
+        </form>
+
+        <div id="coverPage">
+            <h4>Cover page preview</h4>
+            <iframe id="coverPreview" src="misc/page template/cover.html" frameborder="" scrolling="auto"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        made with &hearts; by <a style="color: white; text-decoration:none; font-weight: 530;" href="https://github.com/Amm4r03">ammar</a> | 2024
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.7/dist/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

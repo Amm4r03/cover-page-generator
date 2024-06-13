@@ -150,21 +150,26 @@ footer {
 
 @media (max-width: 320px) {
     header {
-        font-size: 0.6rem;
+        padding-bottom: 10px;
+    }
+
+    header h1 {
+        padding-left: 10px;
+        font-size: 10px;
     }
 
     body {
-        margin-bottom: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 5px;
+        /* margin-bottom: 0; */
+        /* padding: 0; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* padding: 5px; */
     }
     .container {
         flex-direction: column;
-        width: 10%;
+        width: 90%;
         align-items: center;
         justify-content: center;
         /* border: 1px solid black; */
@@ -177,32 +182,39 @@ footer {
         font-size: 10px;
         text-align: center;
         width: 100vw;
+        margin-bottom: -5px;
     }
 }
 
 
 @media (max-width: 425px) {
     header {
-        font-size: 0.5rem;
+        /* color: orange; */
+        font-size: 12px;
         /* display: flex; */
         /* flex-direction: row; */
         /* justify-content: space-between; */
         /* height: 90px; */
-        width: 100vw;
+        /* width: 100vw; */
+    }
+
+    header h1 {
+        padding-left: 10px;
+        font-size: 14px;
     }
 
     body {
         margin-bottom: 0;
         padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 5px;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* padding: 5px; */
     }
     .container {
         flex-direction: column;
-        width: 10%;
+        width: 90%;
         align-items: center;
         justify-content: center;
         /* border: 1px solid black; */
@@ -215,6 +227,7 @@ footer {
         font-size: 10px;
         text-align: center;
         width: 100vw;
+        margin-bottom: -5px;
     }
 }
 
@@ -226,6 +239,11 @@ footer {
         /* justify-content: space-between; */
         /* height: 90px; */
         width: 100vw;
+    }
+
+    header h1 {
+        padding-left: 10px;
+        font-size: 16px;
     }
 
     body {
@@ -252,5 +270,6 @@ footer {
         font-size: 10px;
         text-align: center;
         width: 100vw;
+        margin-bottom: -5px;
     }
 }

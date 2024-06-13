@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const teacherName = document.getElementById('teacherName').value;
         const departmentName = document.getElementById('departmentName').value;
 
-        const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+        const iframeDoc = iframe.contentDocument || iframe.contentWindow.document || iframe;
 
         iframeDoc.getElementById('subtitle').textContent = subtitle;
         iframeDoc.getElementById('title').textContent = title;

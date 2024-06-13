@@ -24,10 +24,16 @@ document.addEventListener("DOMContentLoaded", function() {
         iframeDoc.getElementById('rightFooterText').innerHTML = `<i>Deptt. of ${departmentName}</i><br>Jamia Hamdard, New Delhi - 110062`;
         iframeDoc.getElementById('submittedText').innerHTML = `Submitted in partial fulfillment of the requirement of ${courseName} Program at <br> Deptt. of ${departmentName}<br>Jamia Hamdard, New Delhi`;
     });
+
+    document.getElementById('downloadBtn').addEventListener('click', function(e) {
+        e.preventDefault();
+        printIframeContent();
+    });
 });
 
 function printIframeContent() {
     const iframe = document.getElementById('coverPreview');
-    iframe.contentWindow.focus();
-    iframe.contentWindow.print();
+    const iframeWindow = iframe.contentWindow;
+    iframeWindow.focus();
+    iframeWindow.print();
 }
